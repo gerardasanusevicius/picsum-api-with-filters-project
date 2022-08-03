@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visma Internship technical assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Visma Internship technical assignment</h1>
+    </header>
+    <main>
+    <section id="imageOutlet">
+    </section>
+    <section id="enlargedImageBox">
+        <h2 style="text-align: center; margin-top: 25px">Please pick an image from the bar on the left</h2>
+    </section>
+    <div id="filters">
+        <input type="checkBox" id="checkBox" value="grayscale" onclick="filterAdjustment()">
+        <label for="checkbox"> Grayscale mode</label>
+        <input type="range" id="blurRange" name="blurRange" min="0" max="10" value="0" step="0.5" onchange="filterAdjustment()">
+        <label for="blurRange">Adjust image blur</label>
+    </div>
+    </main>
+</body>
+</html>
